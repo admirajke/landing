@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>PortfolioMain</title>
+	<link rel="stylesheet" type="text/css" href="style/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style/site.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$(window).scroll(function() {
+		if($(this).scrollTop() != 0) {
+		$('#toTop').fadeIn();
+		} else {
+		$('#toTop').fadeOut();
+		}
+		});
+		$('#toTop').click(function() {
+		$('body,html').animate({scrollTop:0},800);
+		});
+	});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<header role="banner">
+			<nav class="center-main">	
+				<ul class="menu">
+					
+					<!-- <li><a href="#">Portfolio</a></li> -->
+					<li><a href="#aboutme">About me</a></li>
+					<li><a href="#">&nbsp;</a></li>
+					<li><a href="#gt-touch">Get in touch</a></li>
+				</ul>
+			</nav>
+			<div class="center-main-logo">
+				<div class="center-main"></div>
+			</div>
+		</header>
+		<div class="hex-cont">
+			<div class="up-hex-cont">
+				<a href="blog/1/index.html">
+					<div class="hexagon port1">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+				</a>
+				<a href="">
+					<div class="hexagon">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+				</a>
+				<a href="">
+					<div class="hexagon">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+				</a>
+				<a href="">
+					<div class="hexagon">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+				</a>
+			</div>
+			<div class="sec-hex-cont">
+				<a href="">
+					<div class="hexagon">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+				</a>
+				<a href="">
+					<div class="hexagon dkw">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+				</a>
+				<a href="">
+					<div class="hexagon">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+				</a>
+			</div>
+			<div class="thrd-hex-cont">
+				<a href="">
+					<div class="hexagon">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+				</a>
+				<a href="">
+					<div class="hexagon">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="about">
+			<div class="about-cont">
+				<div class="left-hex">
+					<div class="hexagon mainphoto">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+				</div>
+				<div class="right-cont">
+					<a name="aboutme"></a><h1>Dmitriy Kalin</h1>
+					<h2>Junior web-developer &amp; Junior front-end developer</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repudiandae consectetur magnam, nemo corporis quasi dolores aut voluptatem enim ea animi, provident illo iste, placeat minus veniam fugit rerum ipsam suscipit accusantium. Culpa unde iste tenetur ipsum voluptas dolore sequi hic incidunt ea quos, totam esse iure magni illum optio.</p>
+				</div>
+				<div class="square">
+					<div class="icon icon1"><a href="https://hh.ru/resume/3a545dbbff01a087d20039ed1f5a6c32735a36"> <img src="images/icon1.jpg"> </a></div>
+					<div class="icon icon2"><a href="https://geekbrains.ru/certificates/160734.en"> <img src="images/icon2.jpg"> </a></div>
+					<div class="icon icon3"><a href="https://geekbrains.ru/certificates/156977.en"> <img src="images/icon3.jpg"> </a></div>
+					<div class="icon icon4"><a href=""> <img src="images/icon4.jpg"> </a></div>
+					<div class="icon icon5"><a href=""> <img src="images/icon5.jpg"> </a></div>
+				</div>
+			</div>
+		</div>
+		<div class="about, gt-touch">
+			<div class="gt-touch-cont">
+				<a name="gt-touch"></a><h1>Get In Touch</h1>
+				<h2>In order to get in touch use the contact form below:</h2>
+				<div class="gt-touch-form">
+					<form action="">
+						<input type="text" name="name" class="form" placeholder="Name(Required)" required>
+						<input type="email" name="email" class="form" placeholder="E-mail(Required)" required>
+						<input type="text" name="subject" class="form" placeholder="Subject" class="form">
+						<textarea name="" id="" cols="20" rows="10" placeholder="Write your message..." class="form"></textarea>
+						<input type="submit" value="Send" class="form form-button">
+					</form>
+				</div>
+				<div class="gt-touch-contact">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolor quaerat commodi accusamus</p>
+					<span class="gt-icon gt-icon-location"></span><p>Moscow, SAO</p>
+					<span class="gt-icon gt-icon-number"></span><p>+79253489720</p>
+					<span class="gt-icon gt-icon-mail"></span><p>fargotmsu@gmail.com</p>
+				</div>
+			</div>
+		</div>
+		<div id="toTop"></div>
+		<footer>&copy; Copyright 2017 by DK</footer>
+	</div>
+</body>
+</html>
